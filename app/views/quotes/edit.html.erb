@@ -4,6 +4,8 @@
   <div class="header">
     <h1>Edit quote</h1>
   </div>
-
+  <%# Converte em um id chamado model_idObject, ex.: quote_1 %>
+  <%= turbo_frame_tag @quote do%>
   <%= render "form", quote: @quote %>
+  <%end%>
 </main>

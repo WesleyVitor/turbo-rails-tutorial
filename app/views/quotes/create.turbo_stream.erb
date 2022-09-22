@@ -1,0 +1,4 @@
+<%= turbo_stream.prepend "quotes", partial: "quotes/quote", locals:{quote:@quote} %>
+<%# Responsável por adicionar um novo quote criado no turbo_fram de id quotes %>
+<%= turbo_stream.update Quote.new, ""%>
+<%# Atualiza um turbo_fram chamado new_quote para vazio %>
